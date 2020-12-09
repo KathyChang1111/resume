@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+      display: block;
+   }
+   body {
+      line-height: 1;
+   }
+   ol, ul {
+      list-style: none;
+   }
+   blockquote, q {
+      quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+      content: '';
+      content: none;
+   }
+   table {
+      border-collapse: collapse;
+      border-spacing: 0;
+   }
+
+
+
+
+
+
+
+
+body{
+    font-family: 'Microsoft JhengHei';
+    /* background-color: #fafafa; */
+}
+.wrap{
+    width: 1025px;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+.header{
+    background: url(https://hexschool.github.io/HTML_sketch_export/assets/img-headerShape.png);
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 125px;
+}
+.header .portrait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 135px;
+}
+.header .portrait h1{
+    font-size: 42px;
+    margin-top: 9px;
+}
+.header .portrait p{
+    margin-top: 9px;
+    color: #8b8b8b;
+    font-size: 14px;
+}
+.header .contactInfo{
+    margin: 125px 0 125px 125px;
+    color: #ffffff;   
+}
+.header .contactInfo li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.header .contactInfo p{
+    margin-left: 10px;
+}
+.header .contactInfo img{
+width: 32px;
+height: 32px;
+object-fit: contain;
+}
+.skills{
+    /* width: 885px; */
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.skills h2,
+.experience h2{
+    text-align: center;
+    color: #1736dc;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 50px;      
+}
+.skills .skillsItems{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.skills .skillsItems h3{
+    text-align: center;
+    font-size: 18px;
+    margin: 26px 0;
+    color: #4a4a4a;
+}
+.skillsItems ul{
+    text-align: left;
+    list-style: disc inside;
+    margin-left: 30px;
+    line-height: 1.5;
+}
+.skillsItems ul li{
+    font-size: 12px;
+    color: #4a4a4a;
+}
+.skillsItems .webSkill{
+    width: 33.33%;
+    padding: 30px 0;
+    box-shadow: 0 0 2px #cccbcb;
+    border-bottom: 5px solid #f58d23;
+    border-radius: 5px;
+}
+.skillsItems .jsSkill{
+    width: 33.33%;
+    padding: 30px 0;
+    box-shadow: 0 0 2px #cccbcb;
+    border-bottom: 5px solid #539e43;
+    border-radius: 5px;
+    margin: 0 16px;  
+}
+.skillsItems .devSkill{
+    width: 33.33%;
+    padding: 30px 0;
+    box-shadow: 0 0 2px #cccbcb;
+    border-bottom: 5px solid #6762a6;
+    border-radius: 5px; 
+}
+.experience{
+    width: 80%;
+    margin: 0 auto 670px;
+    text-align: center;
+    position: relative;
+}
+.experience::before{
+    position: absolute;
+    content: '';
+    border-left: 2px solid #d8d8d8;
+    height: 670px;
+    left: 410px;
+    top: 110px;
+}
+.experience::after{
+    position: absolute;
+    content: '';
+    width: 46px;
+    border-bottom: 4px solid #d8d8d8;
+    border-radius: 2px;
+    left: 387px;
+    bottom: -667px;
+} 
+.experience .item1{
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    width: 42%;
+    line-height: 2;
+    position: absolute;
+    left: 398px;
+    top: 150px;
+}
+.experience .item2{
+    display: flex;
+    text-align: right;
+    align-items: flex-start;
+    width: 42%;
+    line-height: 2;
+    position: absolute;
+    right: 396px;
+    top: 350px;
+}
+.experience .item3{
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    width: 42%;
+    line-height: 2;
+    position: absolute;
+    left: 398px;
+    top: 550px;
+}
+.experience .text{
+    border: 1px solid #fb56bf;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.experience .item1 img,
+.experience .item3 img{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.experience .item2 img{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.experience h5{
+    font-weight: bold;
+}
+.experience h3{
+    font-weight: none;
+    color: #8a1737;
+}
+.experience h4{
+    color: #4a4a4a;
+    font-size: 14px;
+}
+.experience p{
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+.works h2,
+.about h2{
+    text-align: center;
+    color: #fb56bf;
+    font-size: 26px;
+    padding: 80px 0 45px;
+    font-weight: bold;
+}
+.works{
+    width: 80%;
+    margin: 0 auto;
+}
+.works .worksItems{
+    display: flex;
+    justify-content: space-between;
+} 
+.works .work1,
+.works .work3{
+    width: 33.33%;
+    border-radius: 5px;
+    background-color: #fff;   
+}
+.works .work2{
+    width: 33.33%;
+    margin: 0 16px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.works .work1:hover{
+    box-shadow: 0 0 3px #aaa;
+    cursor: pointer;
+}
+.works .work2:hover{
+    box-shadow: 0 0 3px #aaa;
+    cursor: pointer;
+}
+.works .work3:hover{
+    box-shadow: 0 0 3px #aaa;
+    cursor: pointer;
+}
+.works .image1{
+    background-color: #fdb4e3;
+    height: 150px;
+}
+.works .image2{
+    background-color: #424242;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.works .image3{
+    background-color: #8ad7fa;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.works .work1 img{
+    margin-left: 65px;
+    margin-top: 36px;
+}
+.works .text{
+    line-height: 2;
+    padding: 10px;
+}
+.works h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+.works p{
+    font-size: 14px;
+    color: #4a4a4a;
+}
+.about{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.about .intro{
+    display: flex;
+    justify-content: space-around;
+}
+.about .text{
+    width: 50%;
+    line-height: 2;
+    font-size: 14px;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    background-image: url(https://hexschool.github.io/HTML_sketch_export/assets/img-Looper-bg.png);
+    text-align: center;
+    padding: 34px 0;
+}
